@@ -8,16 +8,16 @@ import java.util.List;
 
 
 public class dados {
+	
+	List<jogos> dados = new ArrayList<>();
 
-	ArrayList<jogos> dados = new ArrayList<>();
-
-	public ArrayList<jogos> getDados() {
+	public List<jogos> getDados() {
 		return dados;
 	}
 
-	public void setDados(ArrayList<jogos> dados) {
+	public void setDados(List<jogos> dados) {
 		this.dados = dados;
 	}
-
+	
 
 }

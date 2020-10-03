@@ -28,18 +28,18 @@ public class teste implements ActionListener {
 
 	public void mtTudo() {
 
-		buttn = new JButton("Adicionar Novo placar");	
+		buttn = new JButton("Novo placar");	
 		buttn.addActionListener(this);			
-		buttn.setBounds(40,10,400,36);
+		buttn.setBounds(250,10,200,36);
 
-		buttn2 = new JButton("Placar Minimo e Maximo da temporada e Qebra de recorde");	
+		buttn2 = new JButton("Minimo e Maximo da temporada e Qebra de recorde");	
 		buttn2.addActionListener(this);			
-		buttn2.setBounds(40,55,400,36);
+		buttn2.setBounds(250,50,200,36);
 		
 		janela = new JFrame();
 		janela.setLayout(null);
 		janela.setTitle("Janela principal");
-		janela.setSize(500, 140);
+		janela.setSize(800, 500);
 		////propriedades de adicionar 
 		janela.add(buttn);
 		janela.add(buttn2);
@@ -82,9 +82,10 @@ public class teste implements ActionListener {
 
 		}
 
-		jogo++;			
+		jogo++;		
+		
 
-		adddados();
+		adddados();//a);
 
 
 	}
@@ -100,7 +101,6 @@ public class teste implements ActionListener {
 
 		}else if (e.getSource() == buttn2) {
 			
-			interfacedado();			
 		
 		}
 
@@ -108,18 +108,29 @@ public class teste implements ActionListener {
 	}
 
 
-	public void interfacedado() {
+	public void interfacedado() 
+	{
 
-		if (jogo == 0 ) {
-			
-			JOptionPane.showMessageDialog(null, "Digite o placar Primeiro");
-			
-		}else {
-		
+		System.out.println("jogo " + jogo);
 		p.setVisible(true);		
-		}
 	}
 
+
+	/*public jogos setar() {
+
+
+
+
+
+		jogos a = new jogos();
+		a.setPlcar(read2);
+		a.setMinimo(minimo);
+		a.setMaximo(maximo);
+		a.setRecorde_min(rec_min);
+		a.setRecorde_max(rec_max);	
+
+			return  a;
+		}*/
 
 	public void adddados() {
 

@@ -1,16 +1,11 @@
 package teste_publica;
 
+
+
+
 public class jogos {
-
-	private int jogo,plcar,minimo,maximo,recorde_min,recorde_max;
-
-	public int getJogo() {
-		return jogo;
-	}
-
-	public void setJogo(int jogo) {
-		this.jogo = jogo;
-	}
+	
+	private int plcar,minimo,maximo,recorde_min,recorde_max;
 
 	public int getPlcar() {
 		return plcar;
@@ -52,6 +47,9 @@ public class jogos {
 		this.recorde_max = recorde_max;
 	}
 
+	
+	
+	
 
 }
 

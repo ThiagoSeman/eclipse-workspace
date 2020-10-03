@@ -34,12 +34,12 @@ public class teste implements ActionListener {
 
 		buttn2 = new JButton("Placar Minimo e Maximo da temporada e Qebra de recorde");	
 		buttn2.addActionListener(this);			
-		buttn2.setBounds(40,55,400,36);
+		buttn2.setBounds(40,50,400,36);
 		
 		janela = new JFrame();
 		janela.setLayout(null);
 		janela.setTitle("Janela principal");
-		janela.setSize(500, 140);
+		janela.setSize(500, 130);
 		////propriedades de adicionar 
 		janela.add(buttn);
 		janela.add(buttn2);

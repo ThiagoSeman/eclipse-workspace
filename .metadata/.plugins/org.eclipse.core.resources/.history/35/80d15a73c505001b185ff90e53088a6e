@@ -13,7 +13,7 @@ public class tableModel  extends AbstractTableModel{
 
 	// declaração de variaveis
 	dados dados2 = new dados();
-	private String[] colunas = {"Jogo","Placar","Minimo", "Maximo","Recorde min", "Recorde max"};
+	private String[] colunas = {"Placar","Minimo", "Maximo","Recorde min", "Recorde max"};
 
 	@Override
 
@@ -39,18 +39,15 @@ public class tableModel  extends AbstractTableModel{
 	public Object getValueAt(int linha, int coluna) {
 
 		switch (coluna) {
-		
 		case 0:
-			return dados2.dados.get(linha).getJogo();
-		case 1:
 			return dados2.dados.get(linha).getPlcar();
+		case 1:
+			return dados2.dados.get(linha).getMinimo();
 		case 2:
-			return dados2.dados.get(linha).getMinimo();		
+			return dados2.dados.get(linha).getMaximo();				
 		case 3:
-			return dados2.dados.get(linha).getMaximo();	
-		case 4:
 			return dados2.dados.get(linha).getRecorde_min();
-		case 5:
+		case 4:
 			return dados2.dados.get(linha).getRecorde_max();
 
 		}
