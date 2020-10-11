@@ -27,8 +27,6 @@ public class teste implements ActionListener {
 	}
 
 	public void mtTudo() {
-		
-		adddadosant();
 
 		buttn = new JButton("Adicionar Novo placar");	
 		buttn.addActionListener(this);			
@@ -64,7 +62,27 @@ public class teste implements ActionListener {
 		//Converte a variavel leitura para numero inteiro
 		read2 = Integer.parseInt(leitura);
 
-		verifica();		
+		if (maximo == 0) {
+			maximo = read2;
+			if (minimo ==0) {
+				minimo = read2;				
+			}
+
+
+		}else  if (read2 > maximo) {
+
+			maximo = read2;
+			rec_max ++;
+
+		}
+		if (read2 < minimo) {
+
+			minimo = read2;
+			rec_min++;
+
+		}
+
+		jogo++;			
 
 		adddados();
 
@@ -118,54 +136,6 @@ public class teste implements ActionListener {
 	}
 
 
-	public void verifica() {
-		
-		
-		if (maximo == 0) {
-			maximo = read2;
-			if (minimo ==0) {
-				minimo = read2;				
-			}
-
-
-		}else  if (read2 > maximo) {
-
-			maximo = read2;
-			rec_max ++;
-
-		}
-		if (read2 < minimo) {
-
-			minimo = read2;
-			rec_min++;
-
-		}
-
-		jogo++;			
-		
-		
-	}
-	
-	public void adddadosant() {
-		
-		read2 = 12;
-		verifica();
-		adddados();
-		
-		read2 = 24;
-		verifica();
-		adddados();
-		
-		read2 = 10;
-		verifica();
-		adddados();
-		
-		read2 = 24;
-		verifica();
-		adddados();
-		
-	
-	}
 
 
 

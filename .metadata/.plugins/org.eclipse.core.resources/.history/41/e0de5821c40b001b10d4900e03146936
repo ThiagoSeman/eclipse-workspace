@@ -27,8 +27,6 @@ public class teste implements ActionListener {
 	}
 
 	public void mtTudo() {
-		
-		adddadosant();
 
 		buttn = new JButton("Adicionar Novo placar");	
 		buttn.addActionListener(this);			
@@ -144,27 +142,6 @@ public class teste implements ActionListener {
 		jogo++;			
 		
 		
-	}
-	
-	public void adddadosant() {
-		
-		read2 = 12;
-		verifica();
-		adddados();
-		
-		read2 = 24;
-		verifica();
-		adddados();
-		
-		read2 = 10;
-		verifica();
-		adddados();
-		
-		read2 = 24;
-		verifica();
-		adddados();
-		
-	
 	}
 
 
