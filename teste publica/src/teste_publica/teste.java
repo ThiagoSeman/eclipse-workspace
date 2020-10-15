@@ -1,24 +1,19 @@
 package teste_publica;
 
 import javax.swing.*;
-import javax.swing.table.AbstractTableModel;
-
 import java.awt.event.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class teste implements ActionListener {
 
-	JFrame janela, janela2;
-	JButton buttn,buttn2;
-	JDialog JanelaInterna;
+	JFrame janela;
+	JButton buttn,buttn2,buttn3;
 	String leitura;
 	int minimo = 0 , maximo =0 ,rec_min = 0, rec_max = 0 , read2 = 0, jogo = 0;
 
 
 	dados d = new dados();
+	interfacedados p = new interfacedados();	
 
-	interfacedados p = new interfacedados();
 
 	public static void main(String[] args) {
 
@@ -27,7 +22,7 @@ public class teste implements ActionListener {
 	}
 
 	public void mtTudo() {
-		
+
 		adddadosant();
 
 		buttn = new JButton("Adicionar Novo placar");	
@@ -37,15 +32,20 @@ public class teste implements ActionListener {
 		buttn2 = new JButton("Placar Minimo e Maximo da temporada e Qebra de recorde");	
 		buttn2.addActionListener(this);			
 		buttn2.setBounds(40,55,400,36);
-		
+
+		buttn3 = new JButton("Sair");	
+		buttn3.addActionListener(this);			
+		buttn3.setBounds(40,100,400,36);
+
+
 		janela = new JFrame();
 		janela.setLayout(null);
 		janela.setTitle("Janela principal");
-		janela.setSize(500, 140);
+		janela.setSize(500, 190);
 		////propriedades de adicionar 
 		janela.add(buttn);
 		janela.add(buttn2);
-		
+		janela.add(buttn3);
 
 		janela.setVisible(true);
 		janela.setLocationRelativeTo(null);
@@ -81,27 +81,29 @@ public class teste implements ActionListener {
 			solicita();
 
 		}else if (e.getSource() == buttn2) {
-			
+
 			interfacedado();			
-		
+
+		}else if (e.getSource() == buttn3) {
+
+			janela.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+			System.exit(0);
+
 		}
 
-
 	}
-
 
 	public void interfacedado() {
 
 		if (jogo == 0 ) {
-			
+
 			JOptionPane.showMessageDialog(null, "Digite o placar Primeiro");
-			
+
 		}else {
-		
-		p.setVisible(true);		
+
+			p.setVisible(true);		
 		}
 	}
-
 
 	public void adddados() {
 
@@ -117,10 +119,9 @@ public class teste implements ActionListener {
 
 	}
 
-
 	public void verifica() {
-		
-		
+
+
 		if (maximo == 0) {
 			maximo = read2;
 			if (minimo ==0) {
@@ -142,32 +143,28 @@ public class teste implements ActionListener {
 		}
 
 		jogo++;			
-		
-		
+
 	}
-	
+
 	public void adddadosant() {
-		
+
 		read2 = 12;
 		verifica();
 		adddados();
-		
+
 		read2 = 24;
 		verifica();
 		adddados();
-		
+
 		read2 = 10;
 		verifica();
 		adddados();
-		
+
 		read2 = 24;
 		verifica();
 		adddados();
-		
-	
+
 	}
-
-
 
 }
 
