@@ -5,24 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - teste",
+            "request": "launch",
+            "mainClass": "teste_publica.teste",
+            "projectName": "teste publica"
+        },
+        {
             "command": "npm start",
             "name": "Run npm start",
             "request": "launch",
             "type": "node-terminal"
         },
-        
-    {
-        "type": "java",
-        "request": "attach",
-        "name": "Java",
-        "port": 5005,
-        "sourceRoots": []
-    },
+        {
+            "type": "java",
+            "request": "attach",
+            "name": "Java",
+            "port": 5005,
+            "sourceRoots": []
+        },
         {
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "com.vscode.demo.DemoApplication",
+            "args": ""
         }
     ]
 }

@@ -1,12 +1,11 @@
 package teste_publica;
 
 import teste_publica.interfacedados;
-import teste_publica.tableModel;
 
 public class interfacedados extends javax.swing.JFrame  {
 
 
-	// declaração de variaveis
+	// declaraï¿½ï¿½o de variaveis
 	tableModel tableModel = new tableModel();  
 	private javax.swing.JScrollPane jScrollPane1;
 	private javax.swing.JTable jTable1;

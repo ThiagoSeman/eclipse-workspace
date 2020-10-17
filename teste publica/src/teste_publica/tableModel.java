@@ -1,17 +1,14 @@
 package teste_publica;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.swing.table.AbstractTableModel;
 
 
-// Classe que molda a tabela no formato que traga as informaçoes claras
+// Classe que molda a tabela no formato que traga as informaï¿½oes claras
 
 public class tableModel  extends AbstractTableModel{
 
 
-	// declaração de variaveis
+	// declaraï¿½ï¿½o de variaveis
 	dados dados2 = new dados();
 	private String[] colunas = {"Jogo","Placar","Minimo", "Maximo","Recorde min", "Recorde max"};
 
@@ -34,7 +31,7 @@ public class tableModel  extends AbstractTableModel{
 		return dados2.dados.size();
 	}
 
-	//metodo para adicionar as informações na tabela. 
+	//metodo para adicionar as informaï¿½ï¿½es na tabela. 
 	@Override
 	public Object getValueAt(int linha, int coluna) {
 
@@ -58,7 +55,7 @@ public class tableModel  extends AbstractTableModel{
 
 	}
 
-	//metodo para adicionar informaçoes na variavel dados.
+	//metodo para adicionar informaï¿½oes na variavel dados.
 
 	public void addRow (jogos p) {
 		this.dados2.dados.add(p);
