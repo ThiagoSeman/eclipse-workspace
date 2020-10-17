@@ -6,6 +6,26 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - veiw_Inicial",
+            "request": "launch",
+            "mainClass": "veiw_Inicial"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - veiw_Inicial",
+            "request": "launch",
+            "mainClass": "veiw_Inicial",
+            "projectName": "eclipse-workspace_8a16ac16"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "eclipse-workspace_8a16ac16"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - teste",
             "request": "launch",
             "mainClass": "teste_publica.teste",

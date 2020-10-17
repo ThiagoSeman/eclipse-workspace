@@ -1,10 +1,8 @@
 package teste_publica;
 
 import java.util.ArrayList;
-import java.util.List;
 
-
-// array que guarda os dados que são digitado
+// array que guarda os dados que sï¿½o digitado
 
 
 public class dados {

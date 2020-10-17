@@ -14,9 +14,8 @@ public class tableModel  extends AbstractTableModel{
 
 	@Override
 
-	//metodo ara informar os nomes das colunas
+	//metodo para informar os nomes das colunas
 	public String getColumnName(int column) {
-		// TODO Auto-generated method stub
 		return colunas[column];
 	}
 
@@ -59,15 +58,7 @@ public class tableModel  extends AbstractTableModel{
 
 	public void addRow (jogos p) {
 		this.dados2.dados.add(p);
-
-
-
 	}
-
-
-
-
-
 }
 
 

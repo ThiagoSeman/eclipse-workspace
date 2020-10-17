@@ -53,7 +53,7 @@ public class teste implements ActionListener {
 
 	}
 
-	/* metodo para incersão de dados
+	/* metodo para incersï¿½o de dados
 	 * Fazendo o calculo de maximo e minimo
 	 * e tambem o recorede maximo e minimo
 	 */
@@ -71,7 +71,7 @@ public class teste implements ActionListener {
 
 	}
 
-	// metodo para identificar o botão acionado
+	// metodo para identificar o botï¿½o acionado
 
 	public void actionPerformed(ActionEvent e) {
 
