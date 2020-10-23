@@ -1,25 +1,26 @@
 package teste_publica;
 
+import javax.swing.JButton;
+import javax.swing.RootPaneContainer;
+
 import teste_publica.interfacedados;
 
-public class interfacedados extends javax.swing.JFrame  {
-
+public class interfacedados extends javax.swing.JFrame {
 
 	// declara��o de variaveis
-	tableModel tableModel = new tableModel();  
+	tableModel tableModel = new tableModel();
 	private javax.swing.JScrollPane jScrollPane1;
 	private javax.swing.JTable jTable1;
 
-
-
 	public interfacedados() {
 		initComponents();
-		jTable1.setModel (tableModel);
+		jTable1.setModel(tableModel);
+		JButton buttn = new JButton();
 
 	}
-	// Metodo que cria a janela e a tabela                    
-	private void initComponents() {
 
+	// Metodo que cria a janela e a tabela
+	private void initComponents() {
 
 		jScrollPane1 = new javax.swing.JScrollPane();
 		jTable1 = new javax.swing.JTable();
@@ -27,10 +28,11 @@ public class interfacedados extends javax.swing.JFrame  {
 		jTable1.setModel(new javax.swing.table.DefaultTableModel());
 
 		jScrollPane1.setViewportView(jTable1);
-		
+
 		setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+		((RootPaneContainer) layout).
 
 		getContentPane().setLayout(layout);
 
